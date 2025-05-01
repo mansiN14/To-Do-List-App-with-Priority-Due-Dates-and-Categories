@@ -1,0 +1,267 @@
+/* Base styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+  transition: background-color 0.3s ease;
+}
+
+/* Light Mode Styles */
+.light-mode {
+  background-color: #f4f4f9;
+  color: #433e3e;
+}
+
+.dark-mode {
+  background-color: #0f0f0f;
+  color: #6a1010c3;
+}
+
+/* Main Container */
+.container {
+  background: #f6c7c7;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  background-color: #50325e;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #b271d0;
+  transform: scale(1.05);
+}
+
+/* Task Input Area */
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  padding: 12px 20px;
+  margin-right: 10px;
+  width: 70%;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-container input:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Add Task Button */
+.add-task-btn {
+  background-color: #951c22;
+  color: white;
+}
+
+.add-task-btn:hover {
+  background-color: #3b0311;
+  transform: scale(1.05);
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.task-list li:hover {
+  background-color: #eaeaea;
+}
+
+.task-content span {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.task-actions button {
+  margin-left: 10px;
+  font-size: 16px;
+  padding: 8px;
+}
+
+/* Task Completion */
+.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Button */
+.edit-btn {
+  background-color: #ffc107;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.search-bar {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Priority Select */
+.priority-select {
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Due Date Input */
+.due-date {
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Stars container */
+.stars-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.star {
+  font-size: 30px;
+  color: #ccc; /* Default empty star color */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.star.filled {
+  color: #ffcc00; /* Yellow for filled star */
+}
+
+/* Hover effect for stars */
+.star:hover {
+  color: #ffcc00;
+}
+
+/* Task Priority Styling */
+.priority {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+  padding: 4px 8px;
+}
+
+
+/* Due Date Label */
+.due-date-label {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Edit and Delete Button Styles */
+.edit-btn, .delete-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  margin: 0 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
